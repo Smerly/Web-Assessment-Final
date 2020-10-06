@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ernest Cheung - Final - Web 1.0</title>
+  </head>
+
+  <body>
+    <section id="student-info">
+      <h1>Ernest Cheung</h1>
+      <p>My favorite color is teal and I wear Adidas</p>
+    </section>
+
+    <div id="boxleft">
+      <section id="data-input">
+        <h1>Font Styler</h1>
+        <form>
+          <label> Font Size </label>
+
+          <input id="input-size" type="number" />
+
+          <label> Font Family </label>
+
+          <select id="select-font">
+            <option value="Helvetica">Helvetica</option>
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Georgia">Georgia</option>
+          </select>
+
+          <label> Font Color </label>
+
+          <input id="input-color" type="color" value="#000" />
+
+          <label> Background Color </label>
+
+          <input id="input-bg-color" type="color" value="#fff" />
+
+          <label> Enter Text </label>
+
+          <textarea id="enter-text"> </textarea>
+        </form>
+      </section>
+    </div>
+
+    <div id="toprightbox">
+      <section id="headline-display">
+        <h1 id="display">Sample Text</h1>
+      </section>
+    </div>
+
+    <div id="botrightbox">
+      <section id="data-output">
+        <h1>Font Settings</h1>
+        <pre><code>
+            .headline {
+                font-size: <span id="show-size">16</span>px;
+                font-family: <span id="show-font">Times</span>;
+                color: <span id="show-color">#000</span>;
+                background-color: <span id="show-bg-color">#fff</span>;
+            }
+            </code></pre>
+      </section>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
