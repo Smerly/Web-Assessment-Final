@@ -7,13 +7,13 @@ const inputFont = document.querySelector("#select-font");
 const showFont = document.querySelector("#show-font");
 
 const inputColor = document.querySelector("#input-color");
-const showColor = document.querySelector("show-color");
+const showColor = document.querySelector("#show-color");
 
-const inputBackgroundColor = document.querySelector("input-bg-color");
-const showBackgroundColor = document.querySelector("show-bg-color");
+const inputBackgroundColor = document.querySelector("#input-bg-color");
+const showBackgroundColor = document.querySelector("#show-bg-color");
 
-const enterText = document.querySelector("enter-text");
-const showEnterText = document.querySelector("show-enter-text");
+const enterText = document.querySelector("#enter-text");
+const showEnterText = document.querySelector("#show-enter-text");
 
 inputSize.addEventListener("input", handleInput);
 inputFont.addEventListener("input", handleInput);
@@ -38,8 +38,9 @@ function handleInput(e) {
   display.style.backgroundColor = backgroundColor;
   showBackgroundColor.innerHTML = backgroundColor;
 
-  const text = enterText;
+  const text = enterText.value;
   display = display + `${enterText}`;
+  display.innerHTML = text;
 }
 
 handleInput();
