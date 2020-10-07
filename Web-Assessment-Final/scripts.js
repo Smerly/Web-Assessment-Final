@@ -29,6 +29,17 @@ function handleInput(e) {
   const fontFamily = inputFont.value;
   display.style.fontFamily = fontFamily;
   showFont.innerHTML = fontFamily;
+
+  const color = inputColor.value;
+  display.style.color = color;
+  showColor.innerHTML = color;
+
+  const backgroundColor = inputBackgroundColor.value;
+  display.style.backgroundColor = backgroundColor;
+  showBackgroundColor.innerHTML = backgroundColor;
+
+  const text = enterText;
+  display = display + `${enterText}`;
 }
 
 handleInput();
